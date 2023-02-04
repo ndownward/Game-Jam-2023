@@ -7,21 +7,20 @@ public class MoveRoot : MonoBehaviour
 
     private bool isMouseDragging;
 
-    // Start is called before the first frame update
-    void onMouseDown() {
+    public void OnMouseDown() {
             isMouseDragging = true;
-        }
+    }
 
-        void onMouseUp() {
+    public void OnMouseUp() {
             isMouseDragging = false;
-        }
+    }
 
-        // Update is called once per frame
-        void Update() {
+    void Update() {
 
         // roots respond to user click and drag
         if (isMouseDragging) {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            transform.Translate(mousePosition);
         }
 
             // make sure roots are always touching
