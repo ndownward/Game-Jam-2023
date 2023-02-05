@@ -19,19 +19,11 @@ public class MoveRoot : MonoBehaviour
 
         // roots respond to user click and drag
         if (isMouseDragging) {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-            transform.Translate(mousePosition);
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
+            transform.position = mousePosition;
+
         }
-
-            // make sure roots are always touching
-
-        // check if overlapping
-
-
-
-
-        // no overlap? level complete!
-
         
     }
 }
