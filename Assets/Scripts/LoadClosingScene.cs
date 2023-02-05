@@ -16,8 +16,7 @@ public class LoadClosingScene : MonoBehaviour
     void Update()
     {
         if (isMouseClick) {
-            Debug.Log("heya!");
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(13.5);
         }
         
     }
