@@ -6,6 +6,7 @@ public class MoveRoot : MonoBehaviour
 {
 
     private bool isMouseDragging;
+    public AudioSource audio;
 
     public void OnMouseDown() {
             isMouseDragging = true;
@@ -22,6 +23,8 @@ public class MoveRoot : MonoBehaviour
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
             transform.position = mousePosition;
+
+            audio.Play();
 
         }
         
