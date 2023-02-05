@@ -381,7 +381,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.07985054, y: 0.91403353}
+  m_ConnectedAnchor: {x: -5.3468447, y: 0.85895336}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -470,7 +470,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 958419d06ec9342ac8d48e6566609878, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 637e5c7178fa74f44a7821e4143c384e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -494,12 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RootBone: {fileID: 2195110506857081561}
-  m_BoneTransforms:
-  - {fileID: 2195110506857081561}
-  - {fileID: 2195110507549289853}
-  - {fileID: 2195110508007329631}
-  - {fileID: 2195110507560597963}
-  - {fileID: 2195110507067032258}
+  m_BoneTransforms: []
   m_Bounds:
     m_Center: {x: -0.020275056, y: 0.12435979, z: 0}
     m_Extent: {x: 0.18690509, y: 0.8489901, z: 0}
