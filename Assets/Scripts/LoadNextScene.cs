@@ -12,6 +12,6 @@ public class LoadNextScene : MonoBehaviour
     }
 
     void LoadLevelAfterDelay(){
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }
