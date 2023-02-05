@@ -5,22 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class LoadClosingScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    private bool isMouseClick;
+
+    public void OnMouseDown() {
+        isMouseClick = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnMouseOver() {
-        if (Input.GetMouseButtonDown(1)){
-            Debug.Log("func");
+        if (isMouseClick) {
+            Debug.Log("heya!");
             SceneManager.LoadScene(3);
         }
+        
     }
 }
